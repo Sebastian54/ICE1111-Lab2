@@ -9,20 +9,22 @@ Version: 1.0
 
 int main()
 {
-    int double1; // Declaring variables to hold first and second double values
-    int double2;
+    double double1; // Declaring variables to hold first and second double values
+    double double2;
 
-    printf("Enter a double:> "); // Prompt the user for double1
-    scanf("%d", &double1); // Read the input from the user
-    printf("Enter a double:> "); // Prompt the user for double2
-    scanf("%d", &double2); // Read the input from the user
+    // requesting user input for two double values
+    printf("Enter a double  :> "); // Prompt the user for double1
+    scanf("%lf", &double1); // Read the input from the user
+    printf("Enter a double  :> "); // Prompt the user for double2
+    scanf("%lf", &double2); // Read the input from the user
 
-    printf("\nSum: %d", double1 + double2); // Output the sum of double1 and double2
-    printf("\nDifference: %d", double1 - double2); // Output the difference of double1 and double2
-    printf("\nProduct: %d", double1 * double2); // Output the product of double1 and double2
-    printf("\nQuotient: %d", double1 / double2); // Output the quotient of double1 and double2
-    printf("\nMean: %d", (double1 + double2) / 2); // Output the mean of double1 and double2
-    printf("\nMax: %d", (double1 > double2) ? double1 : double2); // Output the maximum of double1 and double2 
-    printf("\nMin: %d", (double1 < double2) ? double1 : double2); // Output the minimum of double1 and double2
+    // using %.2lf to format the output to 2 decimal places below
+    printf("\nSum: %.2lf", double1 + double2); // Output the sum of double1 and double2
+    printf("\nDifference: %.2lf", double1 - double2); // Output the difference of double1 and double2
+    printf("\nProduct: %.2lf", double1 * double2); // Output the product of double1 and double2
+    printf("\nQuotient: %.2lf", double1 / double2); // Output the quotient of double1 and double2
+    printf("\nMean: %.2lf", (double1 + double2) / 2); // Output the mean of double1 and double2
+    printf("\nMax: %.2lf", (double1 > double2) ? double1 : double2); // Output the maximum of double1 and double2 
+    printf("\nMin: %.2lf", (double1 < double2) ? double1 : double2); // Output the minimum of double1 and double2
     return 0;
 }
