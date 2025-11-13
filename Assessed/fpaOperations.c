@@ -18,7 +18,9 @@ int main()
     printf("Enter a double  :> "); // Prompt the user for double2
     scanf("%lf", &double2); // Read the input from the user
 
-    // using %.2lf to format the output to 2 decimal places below
+    // using %.2lf to format the output to 2 decimal places below, 
+    // source https://www.w3schools.com/c/c_data_types_dec.php && https://www.w3schools.com/c/c_type_conversion.php
+    
     printf("\nSum: %.2lf", double1 + double2); // Output the sum of double1 and double2
     printf("\nDifference: %.2lf", double1 - double2); // Output the difference of double1 and double2
     printf("\nProduct: %.2lf", double1 * double2); // Output the product of double1 and double2
